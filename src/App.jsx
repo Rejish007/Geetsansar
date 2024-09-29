@@ -7,7 +7,7 @@ import { PlayerContext } from './context/PlayerContext'
 
 const App = () => {
 
-  const {audioref,track}=useContext(PlayerContext);
+  const {audioRef,track}=useContext(PlayerContext);
 
 
   return (
@@ -18,7 +18,7 @@ const App = () => {
         
       </div>
       <Player/>
-      <audio ref={audioref} src={track.file} preload='auto'></audio>
+      <audio ref={audioRef} src={track.file} preload='auto'></audio>
       
     </div>
   )
